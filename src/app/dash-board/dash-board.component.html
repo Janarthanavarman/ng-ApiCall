@@ -1,0 +1,24 @@
+<H1>
+  Status Code : {{status}}
+</H1>
+<h4> <a  routerLink="/Create"> Craete New </a></h4>
+<table>
+
+<tr>
+    <th> ID </th>
+  <th> Name </th>
+  <th> Department </th>
+  <th> City </th>
+  <th> Gender </th>
+</tr>
+<tr *ngFor="let l of EmpList">
+    <td>{{l.id}} </td>
+  <td>{{l.name}} </td>
+  <td>{{l.department}} </td>
+  <td>{{l.city }}</td>
+  <td>{{l.gender }}</td>
+</tr>
+</table>
+
+
+

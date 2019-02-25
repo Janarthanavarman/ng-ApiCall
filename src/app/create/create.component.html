@@ -1,0 +1,28 @@
+<h4><a routerLink="/dashboard">Dashboard</a> </h4>
+<H2>Create </H2>
+
+<div> Name </div>
+<div> <input type="text" [(ngModel)]="Emp.Name" name="name" required> </div>
+
+<div> Gender </div>
+<div>
+  <select name="Gender"  [(ngModel)]="Emp.Gender" required>
+    <option *ngFor="let g of Gender" [value]="g"> {{g}} </option>
+  </select>
+</div>
+
+
+<div> Department </div>
+<div> <input name="Department" type="text" [(ngModel)]="Emp.Department" required> </div>
+
+
+<div> City </div>
+<div>
+  <select name="City"  [(ngModel)]="Emp.City" required>
+    <option  *ngFor="let city of citys" [value]="city"> {{city}} </option>
+  </select>
+ 
+</div>
+
+
+<input type="button" (click)="add()" value="Add">
